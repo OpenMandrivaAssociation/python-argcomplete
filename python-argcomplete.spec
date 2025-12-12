@@ -1,6 +1,6 @@
 Name:		python-argcomplete
 Version:	3.5.3
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/a/argcomplete/argcomplete-%{version}.tar.gz
 Summary:	Bash tab completion for argparse
 URL:		https://pypi.org/project/argcomplete/
