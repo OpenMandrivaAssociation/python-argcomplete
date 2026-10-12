@@ -2,7 +2,7 @@
 
 Name:		python-argcomplete
 Version:	3.7.0
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/a/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Summary:	Bash tab completion for argparse
 URL:		https://pypi.org/project/argcomplete/
@@ -18,6 +18,10 @@ BuildArch:	noarch
 
 %description
 Bash tab completion for argparse
+
+%build -p
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %{_bindir}/activate-global-python-argcomplete
