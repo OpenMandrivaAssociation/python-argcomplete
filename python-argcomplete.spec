@@ -1,8 +1,8 @@
 %define module argcomplete
 
 Name:		python-argcomplete
-Version:	3.7.0
-Release:	2
+Version:	3.7.2
+Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/a/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Summary:	Bash tab completion for argparse
 URL:		https://pypi.org/project/argcomplete/
@@ -25,7 +25,6 @@ export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %{_bindir}/activate-global-python-argcomplete
-%{_bindir}/python-argcomplete-check-easy-install-script
 %{_bindir}/register-python-argcomplete
 %{py_sitedir}/%{module}
 %{py_sitedir}/%{module}-%{version}.dist-info
